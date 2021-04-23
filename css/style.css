@@ -1,0 +1,124 @@
+    * {
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+    }
+    
+    body {
+        font-family: 'Karla', sans-serif;
+        font-size: 15px;
+        background-color: hsl(204, 43%, 93%);
+        padding: 20px;
+        justify-content: center;
+        align-items: center;
+        display: flex;
+        min-height: 100vh;
+    }
+    
+    .parent {
+        min-width: 650px;
+        border-radius: 10px;
+        overflow: hidden;
+        box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+    }
+    
+    .big {
+        background-color: white;
+        padding: 35px;
+    }
+    
+    .big h2 {
+        color: hsl(218, 22%, 67%);
+        font-weight: 700;
+    }
+    
+    .big h3 {
+        margin-top: 20px;
+        color: hsl(71, 73%, 54%);
+    }
+    
+    .big p {
+        line-height: 1.6;
+        margin-top: 10px;
+        color: hsl(218, 22%, 67%);
+    }
+    
+    .small {
+        display: flex;
+    }
+    
+    .small>div {
+        flex: 1;
+    }
+    
+    .small1 {
+        background-color: #2BB3B1;
+        padding: 35px;
+    }
+    
+    .small1 h2 {
+        color: white;
+        font-weight: 400;
+    }
+    
+    .small1 p span {
+        font-size: 35px;
+        color: white;
+        margin-right: 10px;
+    }
+    
+    .small1 p:first-of-type {
+        color: cyan;
+        margin-top: 20px;
+        line-height: 1;
+        display: flex;
+        align-items: center;
+    }
+    
+    .small1 p:nth-of-type(2) {
+        color: white;
+        margin-top: 30px;
+    }
+    
+    .small1 button {
+        margin: 20px auto;
+        background-color: hsl(71, 73%, 54%);
+        color: white;
+        border: none;
+        padding: 10px 80px;
+        border-radius: 5px;
+        font-weight: 700;
+        font-size: 1.02rem;
+        box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+        outline: none;
+        cursor: pointer;
+        font-family: 'Karla', sans-serif;
+    }
+    
+    .small2 {
+        background-color: #48BFBC;
+        padding: 35px;
+    }
+    
+    .small2 h3 {
+        color: white;
+        font-weight: 400;
+    }
+    
+    .small2 p {
+        line-height: 1.4;
+        width: 215px;
+        margin-top: 15px;
+        color: white;
+        opacity: 0.7;
+    }
+    
+    @media (max-width:700px) {
+        .small {
+            flex-direction: column;
+        }
+        .parent {
+            min-width: 300px;
+            margin: auto;
+        }
+    }
